@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Ótica Popular</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/@media.css" media="screen and (max-width: 768px)">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="root">
+
+        <header>
+            <nav class="navbar navbar-expand-lg mx-3">
+                <div class="container-fluid d-flex justify-content-between">
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+                  <button class="navbar-toggler" style="border: 2px solid var(--azul);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navHead">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/login.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/catalogo.html">Produtos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/sobre.html">Sobre nós</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <!-- OLD <header>
+            <header>
+                <a href="../Avaliação 3/index.html"><img src="../Avaliação 3/images/logo.png" alt="logo"></a>
+                <nav id="menuPC">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pages/login.html">Login</a></li>
+                        <li><a href="pages/catalogo.html">Produtos</a></li>
+                        <li><a href="pages/sobre.html">Sobre</a></li>
+                    </ul>
+                </nav>
+                <div id="menuMobile" onclick="abrirMenu()">
+                    <img src="../Avaliação 3/images/list.svg" alt="menu">
+                </div>
+            </header>
+        </header>
+         -->
+
+        <main>
+            <section id="carouselSec" class="container-fluid mx-0 my-1 p-0">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Banner1mobile.jpeg"
+                                class="img-fluid d-block d-md-none d-xl-none w-100" alt="óculos">
+                            <img src="images/Banner1.jpeg"
+                                class="img-fluid d-none d-md-block d-xl-none w-100" alt="óculos">
+                            <img src="images/Banner1wide.jpeg"
+                                class="img-fluid d-none d-md-none d-xl-block w-100" alt="óculos">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/Banner2mobile.jpg"
+                                class="img-fluid d-block d-md-none d-xl-none w-100" alt="Promo">
+                            <img src="images/Banner2.jpg"
+                                class="img-fluid d-none d-md-block d-xl-none w-100" alt="Promo">
+                            <img src="images/Banner2wide.jpg"
+                                class="img-fluid d-none d-md-none d-xl-block w-100" alt="Promo">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/Banner3mobile.jpg"
+                                class="img-fluid d-block d-md-none d-xl-none w-100" alt="Ótica">
+                            <img src="images/Banner3.jpg"
+                                class="img-fluid d-none d-md-block d-xl-none w-100" alt="Ótica">
+                            <img src="images/Banner3wide.jpg"
+                                class="img-fluid d-none d-md-none d-xl-block w-100" alt="Ótica">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </section>
+
+            <h2 class="text-center my-5" style="color: var(--azul);">As melhores opções em óculos de sol e grau para sua
+                família</h2>
+
+            <section id="catalogoProd"
+                class="container-fluid p-0 d-flex text-center justify-content-center flex-column">
+                <section id="cardOculos" class="container-fluid d-flex align-items-center"
+                    style="flex-direction: column;">
+                    <div id="cardPagamento" class="container-fluid row justify-content-center gap-5">
+                        <div id="card" class="card col-4" style="width: 12rem;">
+                            <img src="images/sol.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Sol</p>
+                            </div>
+                        </div>
+                        <div id="card" class="card col-4" style="width: 12rem;">
+                            <img src="images/grau.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Grau</p>
+                            </div>
+                        </div>
+                        <div id="card" class="card col-4" style="width: 12rem;">
+                            <img src="images/kid.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Infantil</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <div id="textoMain" class="text-center m-5">
+                <p>"Os óculos de sol com grau proporcionam não só proteção contra os danos causados pelos raios solares,
+                    mas também contra outros elementos presentes em ambientes externos, como vento forte, poeira, areia
+                    e outros detritos que podem irritar os olhos e até mesmo arranhar a córnea.
+                    Os óculos de sol também reduzem o brilho e são essenciais em situações que exigem total atenção,
+                    como ao dirigir ou andar de bicicleta, aumentando a segurança. A exposição excessiva aos raios UV
+                    pode causar doenças nos olhos, como degeneração macular, catarata, pterígio, dentre outras doenças.
+                    Para prevenir tais problemas, é importante utilizar óculos com proteção UV. Além disso, estudos da
+                    American Optometric Association (AOA) mostram que a exposição diurna à luz solar comum pode afetar a
+                    adaptação ao escuro e a visão noturna, e óculos de sol podem ajudar a reduzir essa perda."</p>
+                <h6>Hospital Oftalmológico Visão</h6>
+            </div>
+
+
+        </main>
+
+        <footer class="text-center py-3">
+            <p>OTICA POPULAR LTDA - CNPJ: 07.328.873/0001-41 © Todos os direitos reservados. 2023 | Isto é a cópia de
+                um
+                site feita para fins educativos, o site verdadeiro é: www.oticapopularmg.com.br</p>
+        </footer>
+
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recupere sua senha | Ótica popular</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/@media.css" media="screen and (max-width: 768px)">
+</head>
+
+<body>
+
+    <div id="pagina">
+        <header>
+            <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+            <nav id="menuPC">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/login.html">Login</a></li>
+                    <li><a href="../pages/catalogo.html">Produtos</a></li>
+                    <li><a href="../pages/sobre.html">Sobre nós</a></li>
+                </ul>
+            </nav>
+            <div id="menuMobile" onclick="abrirMenu()">
+                <img src="../images/list.svg" alt="">
+            </div>
+        </header>
+
+        <nav id="menuCel">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/login.html">Login</a></li>
+                <li><a href="../pages/catalogo.html">Produtos</a></li>
+                <li><a href="../pages/sobre.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="mainContent">
+                <div id="formulario">
+                    <h1>Esqueceu sua senha?</h1>
+                    <br>
+                    <form class="form">
+                        <label for="fname">E-mail cadastrado:</label><br>
+                        <input class="forminput" type="text" id="flogin"><br>
+                        <label for="lname">Sua nova senha:</label><br>
+                        <input class="forminput" type="text" id="fsenha"><br>
+                        <label for="lname">Repita sua nova senha:</label><br>
+                        <input class="forminput" type="text" id="fsenha">
+                    </form>
+                    <button>Enviar</button>
+                    <br>
+
+                    <h5>Para confirmar a mudança, confira a caixa de entrada de seu e-mail</h5>
+
+                    <h6>Retornar para o login? <a href="../index.html">Clique aqui.</a></h6>
+
+                </div>
+                <hr>
+                <div id="mainImage">
+                    <img src="../images/foto3.jpeg" alt="">
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <h6>OTICA POPULAR LTDA - CNPJ: 07.328.873/0001-41 © Todos os direitos reservados. 2023 | Isto é a cópia de
+                um
+                site feita para fins educativos, o site verdadeiro é: www.oticapopularmg.com.br</h5>
+        </footer>
+    </div>
+
+    <script>
+        function abrirMenu() {
+
+            if (menuCel.style.display == "none") {
+                menuCel.style.display = "flex"
+            } else {
+                menuCel.style.display = "none"
+            }
+        }
+    </script>
+
+</body>
+
+</html>

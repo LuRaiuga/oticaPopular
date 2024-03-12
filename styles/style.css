@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+    --azul: #0179b4;
+    --azulEscuro: #053a55;
+    --azulTransparente: rgba(1, 120, 180, 0.377);
+    --preto: #000000;
+    --branco: #ffffff;
+}
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+footer {
+    background-color: #0179b4;
+    color: white;
+    margin-top: 30px;
+}
+
+header img {
+    display: flex;
+    width: 170px;
+}
+
+li a {
+    color: #0179b4 !important;
+}
+
+li a:hover {
+    color: #025680 !important;
+    transition-delay: 0.1;
+}
+
+/* Main */
+
+#carouselSec {
+    border-bottom: 10px solid #0179b4;
+    border-top: 10px solid #0179b4;
+}
+
+#card {
+    background-color: #0179b4;
+    border-radius: 10px;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+}
+
+#card p {
+    color: white;
+}
+
+#card:hover {
+    background-color: rgb(0, 69, 109);
+    transition-duration: 0.2s;
+}
+
+#textoMain p {
+    text-align: justify;
+    color: #025680;
+}
+
+h6 {
+    text-align: right;
+}
+
+#sobreNos {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+#textArea {
+    height: 200px;
+}
+
+#botaoEnviar:hover,
+#prodButton:hover {
+    background-color: #0179b4;
+    color: white !important;
+    transition-delay: 0.1s;
+}
+
+#contatoNos,
+#textoNos {
+    display: flex;
+}
+
+#textoNos {
+    max-width: 1000px;
+}
+
+#contatoNos {
+    width: 600px;
+    justify-content: left;
+}
+
+#prodButton {
+    color: #0179b4;
+}
+
+.btnCart:focus {
+    border: none;
+}
+
+#confirmPag , #carrinhoConf{
+    max-width: 600px !important;
+    flex-wrap: wrap !important;
+}
+
+#caixaObrigado {
+    align-items: center;
+    width: auto;
+    margin: 20px auto;
+    height: 700px !important;
+}

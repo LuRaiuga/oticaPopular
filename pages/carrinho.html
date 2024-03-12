@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Ótica Popular</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/@media.css" media="screen and (max-width: 768px)">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="pagina">
+
+        <header class="container-fluid d-flex justify-content-between">
+            <nav class="navbar navbar-expand-lg col-11">
+                <div class="container-fluid d-flex justify-content-between">
+                    <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt=""></a>
+                    <button class="navbar-toggler" style="border: 2px solid var(--azul);" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navHead">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/catalogo.html">Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/sobre.html">Sobre nós</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="carrinhoPag" class="container-fluid d-flex justify-content-evenly gap-5 row m-0 p-3">
+                <div id="carrinhoConf" class="flex-column flex-wrap col-md-5 d-flex">
+                    <div class="p-4 gap-3 d-flex flex-column"
+                        style="border: 3px solid var(--azul); border-radius: 10px;">
+                        <h4 style="color: var(--azul);">Seus itens:</h4>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0 text-center">
+                                <div class="col-md-4">
+                                    <img src="../images/Produtos/Minis/oculos3mini.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aviador Moderno</h5>
+                                        <p class="card-text">1un - R$450</p>
+                                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0 text-center">
+                                <div class="col-md-4">
+                                    <img src="../images/Produtos/Minis/oculos4mini.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Extravaganza</h5>
+                                        <p class="card-text">1un - R$800</p>
+                                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0 text-center">
+                                <div class="col-md-4">
+                                    <img src="../images/Produtos/Minis/oculos1mini.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Óculos Madeira</h5>
+                                        <p class="card-text">1un - R$350</p>
+                                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-between align-center">
+                            <h4 style="color: var(--azulEscuro);">Total: R$ 1600,00</h4>
+                            <button id="btnConfirmaItens" type="button"
+                                style="background-color: var(--azul); color: white;" class="btn">Prosseguir</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- barra direita -->
+                <div id="confirmPag" class="d-none col-md-5 flex-column">
+                    <!-- endereço -->
+                    <div id="endereco" class="p-3" style="border: 3px solid var(--azul); border-radius: 10px;">
+                        <h4 style="color: var(--azul);">Endereço de envio e Pagamento</h4>
+                        <p>Preencha todos os campos para prosseguir</p>
+                        <form id="formFinalizar" class="row g-3">
+                            <div class="col-12">
+                                <label id="inputEndereco" for="inputAddress" class="form-label">Endereço</label>
+                                <input type="text" class="form-control" id="" placeholder="Rua 4, lote 3">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Complemento</label>
+                                <input type="text" class="form-control" id="" placeholder="Apartamento, Condomínio">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="" placeholder="Piraporinha do Sul">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">Estado</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>...</option>
+                                    <option>DF</option>
+                                    <option>AL</option>
+                                    <option>MG</option>
+                                    <option>RS</option>
+                                    <option>Outro</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">CEP</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="00000-000">
+                            </div>
+                            <br>
+                            <div class="col-12">
+                                <label id="inputCartao" for="inputAddress" class="form-label">N. do Cartão</label>
+                                <input type="text" class="form-control" id="" placeholder="****4561">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Nome do titular</label>
+                                <input type="text" class="form-control" id="" placeholder="Fulano de Tal da Silva">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">Validade</label>
+                                <input type="date" class="form-control" id="" placeholder="02/31">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="" placeholder="***">
+                            </div>
+                            <div class="col-12">
+                                <br>
+                                <br>
+                                <button id="btnFinalizar" style="background-color: var(--azul); color: white;"
+                                    class="btn btn-primary" disabled><a
+                                        style="color: white; border: none; text-decoration: none;"
+                                        href="../pages/concluido.html">Finalizar</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </main>
+
+    <footer class="text-center py-3">
+        <p>OTICA POPULAR LTDA - CNPJ: 07.328.873/0001-41 © Todos os direitos reservados. 2023 | Isto é a cópia de
+            um
+            site feita para fins educativos, o site verdadeiro é: www.oticapopularmg.com.br</p>
+    </footer>
+
+    </div>
+
+    <!-- scripts -->
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
